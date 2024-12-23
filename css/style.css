@@ -1,0 +1,176 @@
+/* footer */
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+.footer-content {
+    color: aliceblue;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* background */
+.background {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    filter: blur(5px);
+    object-fit: fill; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* content */
+.content {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    color: white; 
+}
+
+.content h1 {
+    font-size: 3rem;
+    animation: colorChange 60s infinite;
+    font-family: "Merienda", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.content .img-avarta{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    object-position: 0 100%;
+    border-radius: 50%;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.OCl{
+    background-color: rgba(255, 255, 255, 0.497);
+    width: 80%;
+    border-radius: 200px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items:center;
+}
+
+.OCl img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 45%;
+    padding: 5px 20px;
+}
+
+.OCl p {
+    color: rgb(35, 35, 35);
+    display: inline-block;
+    margin: 0;
+    flex-grow: 1; 
+    align-content: center;
+    font-size: 100%;
+    font-family: "Homemade Apple", cursive;
+    font-weight: 400;
+    font-style: normal;    
+    display: flex; 
+    align-items: center;  
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.OCl:hover {
+    margin: 10px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .desktop{
+        display: block;
+        filter: blur(6px);
+        background-image: url('../img&icon/Mienar.gif');
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        background-image: url('../img&icon/game.gif');
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes colorChange {
+    0%, 100% { color: #FF0000; } /* Red */
+    4% { color: #FF7F00; } /* Orange */
+    8% { color: #FFFF00; } /* Yellow */
+    12% { color: #7FFF00; } /* Chartreuse Green */
+    16% { color: #00FF00; } /* Green */
+    20% { color: #00FF7F; } /* Spring Green */
+    24% { color: #00FFFF; } /* Cyan */
+    28% { color: #007FFF; } /* Azure */
+    32% { color: #0000FF; } /* Blue */
+    36% { color: #7F00FF; } /* Violet */
+    40% { color: #FF00FF; } /* Magenta */
+    44% { color: #FF007F; } /* Rose */
+    48% { color: #FF0000; } /* Red */
+    52% { color: #FF7F00; } /* Orange */
+    56% { color: #FFFF00; } /* Yellow */
+    60% { color: #7FFF00; } /* Chartreuse Green */
+    64% { color: #00FF00; } /* Green */
+    68% { color: #00FF7F; } /* Spring Green */
+    72% { color: #00FFFF; } /* Cyan */
+    76% { color: #007FFF; } /* Azure */
+    80% { color: #0000FF; } /* Blue */
+    84% { color: #7F00FF; } /* Violet */
+    88% { color: #FF00FF; } /* Magenta */
+    92% { color: #FF007F; } /* Rose */
+}
