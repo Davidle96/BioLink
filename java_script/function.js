@@ -4,7 +4,7 @@ function btn_update() {
 
 function copyButton() {
     navigator.clipboard.writeText("dat_0963");
-    alert("Copied!");
+    alert("The page has copied the Discord ID!");
 };
 
 

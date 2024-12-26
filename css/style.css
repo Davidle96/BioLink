@@ -27,8 +27,7 @@
     top: 0;
     color: white; 
     width: 600px;
-    min-height: 90vh;
-    padding-bottom: 100px;
+    min-height: 100vh;
 }
 
 .content h1 {
@@ -47,17 +46,22 @@
     border-radius: 50%;
 }
 
+.link{
+    padding-bottom: 100px;
+}
+
 .link a {
     text-decoration: none;
 }
 
 .OCl{
     background-color: rgba(255, 255, 255, 0.497);
-    /* width: 50%; */
     border-radius: 200px;
     margin-bottom: 15px;
     display: flex;
     justify-content: center;
+    height: 40px;
+    animation: color-background 60s infinite;
 }
 
 .OCl img {
@@ -65,12 +69,13 @@
     height: 30px;
     object-fit: cover;
     border-radius: 45%;
-    padding: 5px 20px;
-    display: inline-block;
+    padding: 5px 7px;
+    position: absolute;
+    left: 0;
 }
 
 .OCl p {
-    color: rgb(35, 35, 35);
+    color: rgb(255, 255, 255) ;
     display: inline-block;
     margin: 0;
     align-content: center;
@@ -140,4 +145,58 @@
     84% { color: #7F00FF; } /* Violet */
     88% { color: #FF00FF; } /* Magenta */
     92% { color: #FF007F; } /* Rose */
+}
+
+
+
+@keyframes color-background {
+    0% { background-color: rgba(255, 87, 51, 0.2); }
+    2.08% { background-color: rgba(255, 141, 51, 0.2); }
+    4.16% { background-color: rgba(255, 193, 51, 0.2); }
+    6.24% { background-color: rgba(255, 246, 51, 0.2); }
+    8.32% { background-color: rgba(193, 255, 51, 0.2); }
+    10.4% { background-color: rgba(141, 255, 51, 0.2); }
+    12.48% { background-color: rgba(87, 255, 51, 0.2); }
+    14.56% { background-color: rgba(51, 255, 87, 0.2); }
+    16.64% { background-color: rgba(51, 255, 141, 0.2); }
+    18.72% { background-color: rgba(51, 255, 193, 0.2); }
+    20.8% { background-color: rgba(51, 255, 246, 0.2); }
+    22.88% { background-color: rgba(51, 193, 255, 0.2); }
+    24.96% { background-color: rgba(51, 141, 255, 0.2); }
+    27.04% { background-color: rgba(51, 87, 255, 0.2); }
+    29.12% { background-color: rgba(87, 51, 255, 0.2); }
+    31.2% { background-color: rgba(141, 51, 255, 0.2); }
+    33.28% { background-color: rgba(193, 51, 255, 0.2); }
+    35.36% { background-color: rgba(246, 51, 255, 0.2); }
+    37.44% { background-color: rgba(255, 51, 193, 0.2); }
+    39.52% { background-color: rgba(255, 51, 141, 0.2); }
+    41.6% { background-color: rgba(255, 51, 87, 0.2); }
+    43.68% { background-color: rgba(255, 87, 51, 0.2); }
+    45.76% { background-color: rgba(255, 141, 51, 0.2); }
+    47.84% { background-color: rgba(255, 193, 51, 0.2); }
+    49.92% { background-color: rgba(255, 246, 51, 0.2); }
+    52% { background-color: rgba(193, 255, 51, 0.2); }
+    54.08% { background-color: rgba(141, 255, 51, 0.2); }
+    56.16% { background-color: rgba(87, 255, 51, 0.2); }
+    58.24% { background-color: rgba(51, 255, 87, 0.2); }
+    60.32% { background-color: rgba(51, 255, 141, 0.2); }
+    62.4% { background-color: rgba(51, 255, 193, 0.2); }
+    64.48% { background-color: rgba(51, 255, 246, 0.2); }
+    66.56% { background-color: rgba(51, 193, 255, 0.2); }
+    68.64% { background-color: rgba(51, 141, 255, 0.2); }
+    70.72% { background-color: rgba(51, 87, 255, 0.2); }
+    72.8% { background-color: rgba(87, 51, 255, 0.2); }
+    74.88% { background-color: rgba(141, 51, 255, 0.2); }
+    76.96% { background-color: rgba(193, 51, 255, 0.2); }
+    79.04% { background-color: rgba(246, 51, 255, 0.2); }
+    81.12% { background-color: rgba(255, 51, 193, 0.2); }
+    83.2% { background-color: rgba(255, 51, 141, 0.2); }
+    85.28% { background-color: rgba(255, 51, 87, 0.2); }
+    87.36% { background-color: rgba(255, 87, 51, 0.2); }
+    89.44% { background-color: rgba(255, 141, 51, 0.2); }
+    91.52% { background-color: rgba(255, 193, 51, 0.2); }
+    93.6% { background-color: rgba(255, 246, 51, 0.2); }
+    95.68% { background-color: rgba(193, 255, 51, 0.2); }
+    97.76% { background-color: rgba(141, 255, 51, 0.2); }
+    100% { background-color: rgba(87, 255, 51, 0.2); }
 }
