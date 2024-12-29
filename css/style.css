@@ -79,11 +79,13 @@
     display: inline-block;
     margin: 0;
     align-content: center;
-    font-size: 100%;
-    font-family: "Homemade Apple", cursive;
-    font-weight: 400;
-    font-style: normal;
     justify-content: center;
+    text-align: center;
+
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    
     
 }
 
@@ -93,8 +95,6 @@
     transform: scale(1);
     animation: pulse 2s infinite;
 }
-
-
 
 
 
