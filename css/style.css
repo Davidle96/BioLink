@@ -62,6 +62,7 @@
     justify-content: center;
     height: 40px;
     animation: color-background 60s infinite;
+    align-items: center;
 }
 
 .OCl img {
